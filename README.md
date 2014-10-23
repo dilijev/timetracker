@@ -7,24 +7,21 @@ When created, tasks can be given an estimated time to completion. When a user st
 Users can set the estimated time to completion at any time. Perhaps this could be an argument to the command which allows a user to mark a session on a task as ended, but let's keep it simple for now.
 
 Times associated with a task should be:
-    - time created
-    - original estimate
-    - time logged (no reason to separate this from total time) -- also tasks can be reopened
-    - estimated time remaining (optional)
-    
-    - list of sessions logged for that task*
 
-* I'm not sure yet how the sessions should be kept... whether they should be kept as lists within the tasks themselves, or whether they should be kept in a time-linear list which can be searched through for sessions related to a task. I think the latter would make more sense, but would potentially get slow as more and more sessions are logged. 
+- time created
+- original estimate
+- time logged (no reason to separate this from total time) -- also tasks can be eopened
+- estimated time remaining (optional)
+
+I'm not sure yet how the sessions should be kept... whether they should be kept as lists within the tasks themselves, or whether they should be kept in a time-linear list which can be searched through for sessions related to a task. I think the latter would make more sense, but would potentially get slow as more and more sessions are logged. 
 
 Other information associated with a task should be whether the task is active or completed. Completed tasks should be kept around because they can be reopened to continue work if more work needs to be done, and so that logs can be considered for each task to analyze how long something took, whether that time was well-spent, etc.
 
---
 
 ## Best practices
 
 Don't actually log the time spent not working unless it is a significant category where time can end up being spent (and is significant for logging), rather than simply time spent doing nothing.
 
---
 
 ## Commands
 
